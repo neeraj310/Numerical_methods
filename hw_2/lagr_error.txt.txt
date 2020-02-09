@@ -1,0 +1,32 @@
+Error Bound in Lagrange Interpolation 
+    E(f(x)) = E2(f(x)) = f(x) – Lagrange Approximation(fx)
+                       = (f(3rd derivation) * (x-x0)(x-x1)(x-x2))/ (n+1 !)
+                       = (f’’’(x) * (x-x0)(x-x1)(x-x2))/ 3!
+                                 
+f(x) = Sin(x)
+f’’’(x) = -Cos(x)
+f’’’(x)| max in interval [0 1] is is cos(0) = 1
+
+Now lets maxmimize the second term in the error
+
+Let g(x) = (x-x0)(x-x1)(x-x2)) = x3 - 1.5x2 + 0.54x
+
+g’(x) = 3x2 -3x +0.54
+
+For finding maximum, make g'(x) zero and find roots,
+3x2 -3x +0.54 = 0
+Roots are 0.235424868893541, 0.764575131106459
+
+g(0.235424868893541) = 0.0570405183549043
+g(0.764575131106459) = -0.0170405183549042
+
+So max value of g(x) is 0. 0570405183549043 in [0,1]
+
+Error bound is = (1 * 0.0570405183549043)/6 = 0.00950675305915072
+So error must be less than or equal to 0.00950675305915072
+
+
+
+
+
+         
